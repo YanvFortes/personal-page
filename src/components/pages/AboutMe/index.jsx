@@ -1,6 +1,4 @@
 import ModelPost from "../../ModelPost"
-import coverPhoto from "../../../assets/sobre_mim_capa.png"
-
 import styled from "styled-components"
 
 const Title = styled.h3`
@@ -25,7 +23,7 @@ const AboutMe = () => {
     return (
         <ModelPost
             title="AboutMe"
-            coverPhoto={coverPhoto}
+            coverPhoto="/img/sobre_mim_capa.png"
         >    
             <Title>Hello, I'm Yan Fortes!</Title>
             <ProfilePicture

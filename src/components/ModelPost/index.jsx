@@ -11,22 +11,26 @@ const CoverPhoto = styled.div`
     position: absolute;
     top: 0;
     width: 100%;
+    height: 204px;
     z-index: -1;
 `
 const Title = styled.h2`
     align-items: center;
     display: flex;
     font-size: 4rem;
-    padding: .5em 9em;
+    justify-content: center;
+    padding: 1em;
 `
 const Content = styled.div`
-    padding: 2.5em 7.5em 4.5em;
+    padding: 3.5em 7.5em 4.5em;
+    color: #444444;
 `
 
 const ModelPost = ( {children, coverPhoto, title} ) => {
+    console.log(coverPhoto)
     return(
         <Container>
-            <CoverPhoto style={{ backgroundImage: `url(${coverPhoto})` }}/>
+            <CoverPhoto style={{ backgroundImage: `url("${coverPhoto}")`}}/>
             <Title>{title}</Title>
             <Content>{children}</Content>
         </Container>

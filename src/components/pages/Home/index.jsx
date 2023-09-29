@@ -1,4 +1,4 @@
-import Post from "../../Post"
+import PostCard from "../../PostCard"
 import posts from "../../../json/posts.json"
 import styled from "styled-components"
 
@@ -18,7 +18,7 @@ const Home = () => {
             <List>
                 {posts.map((post) => (
                     <li key={post.id}>
-                        <Post post={post} />
+                        <PostCard post={post} />
                     </li>
                 ))}
             </List>
